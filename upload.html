@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sell an item</title>
+    <link rel="stylesheet" href="styles/upload.css" />
+  </head>
+  <body>
+    <div>
+      <nav class="navbar">
+        <ul>
+          <span class="left-nav">CampusStall</span>
+          <span class="right-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Browse Items</a></li>
+            <li>
+              <a href="upload.html" class="orange-background">Sell an item</a>
+            </li>
+          </span>
+        </ul>
+      </nav>
+    </div>
+    <div class="header-text">
+      <div class="sell-item">Sell an item</div>
+      <div class="small-text">
+        Add a clear photo, a fair price and the room where buyers can collect
+        it.
+      </div>
+    </div>
+
+    <div class="main">
+      <div class="left-main">
+        <div class="photo-text">Photo</div>
+        <div class="preview-upload">
+          <img id="preview" alt="" style="max-width: 100%; max-height: 260px" />
+
+          Preview appears here
+          <p class="small-text">
+            JPG or PNG, up to 5 MB. The photo is resized before saving
+          </p>
+        </div>
+        <div class="choose-photo">
+          <input type="file" id="photo" accept="image/*" hidden />
+          <label for="photo" id="preview">Choose a photo</label>
+        </div>
+      </div>
+      <div class="right-main">
+        <form action="" id="upload-form">
+          <div>
+            <label for="">Item name</label>
+          </div>
+          <div>
+            <input
+              class="wide-input"
+              type="text"
+              placeholder="Hostel reading lamp"
+              id="name"
+            />
+          </div>
+          <div class="input-flex">
+            <div class="left-input">
+              <div><label for="">Price(₦)</label></div>
+              <div>
+                <input
+                  class="price-input"
+                  type="number"
+                  step="100"
+                  placeholder=""
+                  id="price"
+                />
+              </div>
+            </div>
+            <div class="right-input">
+              <div><label for="">Category</label></div>
+              <div>
+                <select class="price-input" name="" id="category">
+                  <option>Books</option>
+                  <option>Electronics</option>
+                  <option>Clothing</option>
+                  <option>Kitchen</option>
+                  <option>Furniture</option>
+                  <option>Stationery</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="condition-label"><label for="">Condition</label></div>
+          <div>
+            <span class="condition-container"
+              ><label for=""
+                ><input
+                  type="radio"
+                  value="New"
+                  name="condition"
+                  checked
+                />New</label
+              ></span
+            >
+            <span class="condition-container">
+              <label for="">
+                <input type="radio" value="Used" name="condition" />
+                Used
+              </label>
+            </span>
+          </div>
+          <div class="pickup-label">
+            <label for="">Pickup room</label>
+          </div>
+          <div>
+            <input
+              class="wide-input pickup-input"
+              type="text"
+              placeholder="Block C, Room 214"
+              id="room"
+            />
+          </div>
+          <div class="small-text">
+            Buyers will collect the item from this room
+          </div>
+          <div><label for="">Whatsapp or phone number</label></div>
+          <div>
+            <input
+              class="wide-input"
+              type="tel"
+              placeholder="08012345678"
+              id="contact"
+            />
+          </div>
+          <div><label for="">Description</label></div>
+          <div><textarea name="" id="desc" cols="5"></textarea></div>
+          <div>
+            <button class="post-item" type="submit">Post item</button>
+            <button class="cancel">Cancel</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script type="module" src="scripts/upload.js"></script>
+  </body>
+</html>

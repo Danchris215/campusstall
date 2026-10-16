@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Browse items</title>
+    <link rel="stylesheet" href="styles/products.css" />
+  </head>
+  <body>
+    <div>
+      <nav class="navbar">
+        <ul>
+          <span class="left-nav">CampusStall</span>
+          <span class="right-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Browse Items</a></li>
+            <li>
+              <a href="upload.html" class="orange-background">Sell an item</a>
+            </li>
+          </span>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="browse">
+      <div class="browse-items">Browse items</div>
+      <div>8 items listed</div>
+    </div>
+    <div class="main">
+      <div class="left-main">
+        <div class="label"><label for="">Search</label></div>
+        <div class="filter">
+          <input
+            class="input-text js-search-bar"
+            type="text"
+            placeholder="Item name"
+          />
+        </div>
+        <div class="filter">
+          <div class="label">Category</div>
+          <div class="categories">
+            <div><button class="category-btn active" data-category="all">All</button></div>
+            <div><button class="category-btn" data-category="books">Books</button></div>
+            <div><button class="category-btn" data-category="electronics">Electronics</button></div>
+            <div><button class="category-btn" data-category="clothing">Clothing</button></div>
+            <div><button class="category-btn" data-category="kitchen">Kitchen</button></div>
+            <div><button class="category-btn"  data-category="furniture">Furniture</button></div>
+            <div><button class="category-btn" data-category="stationery">Stationery</button></div>
+          </div>
+        </div>
+        <div class="filter">
+          <div class="label"><label for="">Condition</label></div>
+          <div><input type="checkbox" />New</div>
+          <div><input type="checkbox" />Used</div>
+        </div>
+        <div class="filter">
+          <div class="label"><label for="">Maximum price</label></div>
+          <input type="number" placeholder="e.g 10000" class="input-text" />
+        </div>
+        <div class="filter">
+          <div class="label"><label for="">Sort by</label></div>
+          <div>
+            <select name="" id="" class="input-text">
+              <option value="">Newest first</option>
+              <option value="">Cheapest</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="right-main">
+        <div class="listings">
+          <a href="product.html"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="scripts/products.js"></script>
+    <script type="module" src="scripts/items.js"></script>
+  </body>
+</html>

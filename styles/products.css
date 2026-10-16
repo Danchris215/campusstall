@@ -1,0 +1,296 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Bricolage Grotesque", sans-serif;
+  background-color: rgb(246, 245, 241);
+}
+.navbar {
+  background-color: #14213d;
+  padding: 16px 48px;
+}
+.navbar ul {
+  display: flex;
+  flex-direction: row;
+}
+.left-nav {
+  flex: 2;
+  color: white;
+}
+
+.right-nav {
+  flex: 1;
+  display: flex;
+}
+.right-nav li {
+  flex: 1;
+}
+nav ul li {
+  list-style-type: none;
+  flex: 1;
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-family: "DM-Sans", sans-serif;
+}
+.orange-background {
+  background-color: #f5a524;
+  padding: 12px 22px;
+  border-radius: 10px;
+  color: black;
+}
+.browse {
+  padding: 20px 48px 0px;
+}
+.browse-items {
+  font-size: 44px;
+  font-family: "Bricolage Grotesque";
+}
+.main {
+  display: flex;
+  padding: 30px 48px 56px;
+}
+.left-main {
+  flex: 1;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  height: fit-content;
+}
+.filter {
+  margin-bottom: 20px;
+}
+.input-text {
+  padding: 0px 14px;
+  width: 230px;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.7);
+}
+.label {
+  margin-bottom: 5px;
+}
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+button {
+  font-size: 15px;
+  font-family: "DM Sans";
+  padding: 5px 16px;
+  font-size: 15px;
+  border-radius: 15px;
+  background-color: white;
+  border: 1px solid black;
+}
+.right-main {
+  flex: 4;
+  margin-left: 20px;
+}
+
+.listings {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+.listing-card {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: white;
+}
+.listing-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 7px;
+}
+.product-anchor {
+  text-decoration: none;
+  color: #14213d;
+}
+.listing-card p {
+  margin-top: auto;
+}
+.listing-head {
+  display: flex;
+  padding-bottom: 20px;
+  align-items: baseline;
+}
+.listing-head .latest {
+  font-size: 34px;
+  font-family: "Bricolage Grotesque";
+}
+.listing-head .browse-all {
+  margin-left: auto;
+  font-family: "GM Sans";
+}
+.listing-head .browse-all a {
+  color: black;
+}
+.category-btn.active {
+  background-color: #ff9800; /* Example: Orange theme background */
+  color: white;
+  border-color: #e68a00;
+}
+/* Tablets */
+@media (max-width: 900px) {
+  .navbar {
+    padding: 16px 24px;
+  }
+
+  .browse {
+    padding: 20px 24px 0;
+  }
+
+  .browse-items {
+    font-size: 36px;
+  }
+
+  .main {
+    padding: 24px;
+    gap: 20px;
+  }
+
+  .left-main {
+    flex: 1;
+    padding: 15px;
+  }
+
+  .input-text {
+    width: 100%;
+  }
+
+  .right-main {
+    flex: 3;
+    margin-left: 0;
+    min-width: 0;
+  }
+
+  .listings {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 12px;
+  }
+}
+
+/* Mobile phones */
+@media (max-width: 600px) {
+  .navbar {
+    padding: 16px;
+  }
+
+  .navbar ul {
+    align-items: center;
+    gap: 10px;
+  }
+
+  .left-nav {
+    flex: 1;
+    white-space: nowrap;
+  }
+
+  .right-nav {
+    flex: 2;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 8px;
+  }
+
+  .right-nav li {
+    flex: initial;
+  }
+
+  nav ul li a {
+    font-size: 12px;
+  }
+
+  .orange-background {
+    padding: 9px 10px;
+  }
+
+  .browse {
+    padding: 24px 16px 0;
+  }
+
+  .browse-items {
+    font-size: 30px;
+  }
+
+  .main {
+    flex-direction: column;
+    padding: 20px 16px 32px;
+    gap: 24px;
+  }
+
+  .left-main {
+    width: 100%;
+    padding: 16px;
+  }
+
+  .input-text {
+    width: 100%;
+  }
+
+  .categories {
+    gap: 8px;
+  }
+
+  .right-main {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .listing-head .latest {
+    font-size: 26px;
+  }
+
+  .listings {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .listing-card {
+    min-width: 0;
+  }
+
+  .listing-card img {
+    height: 120px;
+  }
+}
+
+/* Small mobile phones */
+@media (max-width: 380px) {
+  .navbar ul {
+    gap: 6px;
+  }
+
+  .left-nav {
+    font-size: 13px;
+  }
+
+  .right-nav {
+    gap: 5px;
+  }
+
+  nav ul li a {
+    font-size: 10px;
+  }
+
+  .orange-background {
+    padding: 8px 6px;
+  }
+
+  .browse-items {
+    font-size: 26px;
+  }
+
+  .listings {
+    grid-template-columns: 1fr;
+  }
+}

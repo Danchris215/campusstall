@@ -1,0 +1,399 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Bricolage Grotesque", sans-serif;
+  background-color: rgb(246, 245, 241);
+}
+.navbar {
+  background-color: #14213d;
+  padding: 16px 48px;
+}
+.navbar ul {
+  display: flex;
+  flex-direction: row;
+}
+.left-nav {
+  flex: 2;
+  color: white;
+}
+
+.right-nav {
+  flex: 1;
+  display: flex;
+}
+.right-nav li {
+  flex: 1;
+}
+nav ul li {
+  list-style-type: none;
+  flex: 1;
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-family: "DM-Sans", sans-serif;
+}
+.orange-background {
+  background-color: #f5a524;
+  padding: 12px 22px;
+  border-radius: 10px;
+  color: black;
+}
+
+.main {
+  display: flex;
+  padding: 72px 48px 56px;
+}
+.left-main {
+  flex: 1;
+}
+.right-main {
+  flex: 1;
+}
+.buy-sell {
+  font-size: 60px;
+  margin-bottom: 15px;
+  font-family: "Bricolage Grotesque";
+}
+.hook {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: rgba(0, 0, 0, 0.4);
+}
+input {
+  padding: 10px 20px;
+}
+h6 {
+  font-size: 14px;
+  color: #8a5a00;
+  margin-bottom: 15px;
+}
+button {
+  background-color: #14213d;
+  color: white;
+  font-size: 16px;
+  border-radius: 10px;
+  padding: 10px 20px;
+  border: none;
+}
+.right-main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  border-radius: 10px;
+}
+.card-green {
+  background-color: #bfd9d0;
+  border-radius: 10px;
+}
+.card-blue {
+  background-color: #c7d6ee;
+  border-radius: 10px;
+}
+.card-orange {
+  background-color: #f8d9a0;
+  border-radius: 10px;
+  margin-top: 0;
+}
+.card-purple {
+  background-color: #d8cdeb;
+  border-radius: 10px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.card img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  margin-bottom: 7px;
+}
+.card p {
+  margin-top: auto;
+}
+.category-head {
+  display: flex;
+  padding-bottom: 20px;
+  align-items: baseline;
+}
+.category-head .shop {
+  font-size: 34px;
+  font-family: "Bricolage Grotesque";
+}
+.category-head .see-items {
+  margin-left: auto;
+  font-family: "GM Sans";
+}
+.category-head .see-items a {
+  color: black;
+}
+.category {
+  display: flex;
+  gap: 10px;
+  height: 120px;
+}
+.category-card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 18px;
+}
+.category-card .category-name {
+  font-family: "Bricolage Grotesque";
+  font-size: 20px;
+}
+.category-card .category-num {
+  font-family: "DM Sans";
+
+  margin-top: auto;
+  font-size: 14px;
+}
+.category-section {
+  padding: 72px 48px 56px;
+}
+.listing-section {
+  padding: 72px 48px 56px;
+}
+.listings {
+  display: flex;
+}
+.listing-card {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  flex: 1;
+  border-radius: 10px;
+}
+.listing-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 7px;
+}
+.listing-card p {
+  margin-top: auto;
+}
+.listing-head {
+  display: flex;
+  padding-bottom: 20px;
+  align-items: baseline;
+}
+.listing-head .latest {
+  font-size: 34px;
+  font-family: "Bricolage Grotesque";
+}
+.listing-head .browse-all {
+  margin-left: auto;
+  font-family: "GM Sans";
+}
+.listing-head .browse-all a {
+  color: black;
+}
+.footer {
+  background-color: #14213d;
+  margin-bottom: 0;
+  padding: 20px;
+  margin-bottom: 0px;
+}
+.how {
+  font-size: 34px;
+  font-family: "Bricolage Grotesque";
+  color: white;
+  margin-bottom: 10px;
+}
+.footer-steps {
+  display: flex;
+}
+.footer-step {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  color: #f5a524;
+  font-family: "Bricolage Grotesque";
+  font-size: 48px;
+}
+.footer-step p {
+  color: white;
+  font-family: "DM Sans";
+  font-size: 20px;
+}
+/* Responsive design */
+
+/* Tablets */
+@media (max-width: 900px) {
+  .navbar {
+    padding: 16px 24px;
+  }
+
+  .main {
+    padding: 48px 24px;
+    gap: 20px;
+  }
+
+  .buy-sell {
+    font-size: 44px;
+  }
+
+  .category-section,
+  .listing-section {
+    padding: 48px 24px;
+  }
+
+  .footer-step {
+    font-size: 36px;
+  }
+
+  .footer-step p {
+    font-size: 16px;
+  }
+}
+
+/* Mobile phones */
+@media (max-width: 600px) {
+  .navbar {
+    padding: 16px;
+  }
+
+  .navbar ul {
+    align-items: center;
+    gap: 15px;
+  }
+
+  .left-nav {
+    flex: 1;
+    white-space: nowrap;
+  }
+
+  .right-nav {
+    flex: 2;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .right-nav li {
+    flex: initial;
+  }
+
+  nav ul li a {
+    font-size: 12px;
+  }
+
+  .orange-background {
+    padding: 9px 10px;
+    border-radius: 7px;
+  }
+
+  .main {
+    flex-direction: column;
+    padding: 32px 16px;
+    gap: 24px;
+  }
+
+  .left-main,
+  .right-main {
+    width: 100%;
+  }
+
+  .buy-sell {
+    font-size: 38px;
+  }
+
+  .hook {
+    font-size: 16px;
+  }
+
+  input {
+    max-width: 100%;
+  }
+
+  .category-section,
+  .listing-section {
+    padding: 32px 16px;
+  }
+
+  .category-head .shop,
+  .listing-head .latest,
+  .how {
+    font-size: 26px;
+  }
+
+  .category {
+    flex-wrap: wrap;
+    height: auto;
+  }
+
+  .category-card {
+    flex: 1 1 40%;
+    min-height: 110px;
+    padding: 12px;
+  }
+
+  .category-card .category-name {
+    font-size: 16px;
+  }
+
+  .listings {
+    flex-wrap: wrap;
+  }
+
+  .listing-card {
+    flex: 1 1 45%;
+    min-width: 0;
+  }
+
+  .listing-card img {
+    height: 120px;
+  }
+
+  .footer-steps {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .footer-step {
+    font-size: 32px;
+  }
+
+  .footer-step p {
+    font-size: 16px;
+  }
+}
+
+/* Small mobile phones */
+@media (max-width: 380px) {
+  .navbar ul {
+    gap: 8px;
+  }
+
+  .left-nav {
+    font-size: 13px;
+  }
+
+  .right-nav {
+    gap: 6px;
+  }
+
+  nav ul li a {
+    font-size: 10px;
+  }
+
+  .orange-background {
+    padding: 8px 6px;
+  }
+
+  .buy-sell {
+    font-size: 32px;
+  }
+
+  .category-head .shop,
+  .listing-head .latest {
+    font-size: 22px;
+  }
+}

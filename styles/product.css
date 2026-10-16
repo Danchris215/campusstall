@@ -1,0 +1,313 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Bricolage Grotesque", sans-serif;
+  background-color: rgb(246, 245, 241);
+}
+.navbar {
+  background-color: #14213d;
+  padding: 16px 48px;
+}
+.navbar ul {
+  display: flex;
+  flex-direction: row;
+}
+.left-nav {
+  flex: 2;
+  color: white;
+}
+
+.right-nav {
+  flex: 1;
+  display: flex;
+}
+.right-nav li {
+  flex: 1;
+}
+nav ul li {
+  list-style-type: none;
+  flex: 1;
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-family: "DM-Sans", sans-serif;
+}
+.orange-background {
+  background-color: #f5a524;
+  padding: 12px 22px;
+  border-radius: 10px;
+  color: black;
+}
+.card-orange p {
+  font-size: 18px;
+  font-family: "DM Sans";
+}
+.listings {
+  padding: 0px 48px 56px;
+}
+
+.listings-head {
+  font-size: 30px;
+  font-family: "Bricolage Grotesque";
+}
+.listings-cards {
+  display: flex;
+}
+.listing-card {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  flex: 1;
+  border-radius: 10px;
+}
+.listing-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 7px;
+}
+.listing-card p {
+  margin-top: auto;
+}
+.main {
+  display: flex;
+  padding: 72px 48px 56px;
+}
+.left-main {
+  flex: 1;
+}
+.right-main {
+  flex: 1;
+}
+.item {
+  font-family: "Bricolage Grotesque";
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+.item-description {
+  font-size: 18px;
+  font-family: "DM Sans";
+  margin-bottom: 20px;
+}
+.item-summary {
+  background-color: white;
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+.item-room,
+.item-seller,
+.item-date {
+  display: flex;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  margin-bottom: 10px;
+}
+.item-room-right,
+.item-seller-right,
+.item-date-right {
+  margin-left: auto;
+}
+.item-contact {
+  display: flex;
+  gap: 50px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.anchor-whatsapp-contact {
+  background-color: #14213d;
+  color: white;
+  flex: 1;
+  width: 70%;
+  height: 50px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mark-sold {
+  background-color: rgb(246, 245, 241);
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  flex: 1;
+  width: 100px;
+  height: 50px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.small-text {
+  font-size: 14px;
+  font-family: "DM Sans";
+}
+a {
+  text-decoration: none;
+}
+/* Tablets */
+@media (max-width: 900px) {
+  .navbar {
+    padding: 16px 24px;
+  }
+
+  .main {
+    padding: 48px 24px;
+    gap: 24px;
+  }
+
+  .item {
+    font-size: 32px;
+  }
+
+  .item-contact {
+    gap: 12px;
+  }
+
+  .listings {
+    padding: 0 24px 40px;
+  }
+
+  .listing-card img {
+    height: 130px;
+  }
+}
+
+/* Mobile phones */
+@media (max-width: 600px) {
+  .navbar {
+    padding: 16px;
+  }
+
+  .navbar ul {
+    align-items: center;
+    gap: 10px;
+  }
+
+  .left-nav {
+    flex: 1;
+    white-space: nowrap;
+  }
+
+  .right-nav {
+    flex: 2;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 8px;
+  }
+
+  .right-nav li {
+    flex: initial;
+  }
+
+  nav ul li a {
+    font-size: 12px;
+  }
+
+  .orange-background {
+    padding: 9px 10px;
+  }
+
+  .main {
+    flex-direction: column;
+    padding: 32px 16px;
+    gap: 24px;
+  }
+
+  .left-main,
+  .right-main {
+    width: 100%;
+  }
+
+  .left-main img {
+    max-width: 100%;
+  }
+
+  .item {
+    font-size: 30px;
+  }
+
+  .item-description {
+    font-size: 16px;
+  }
+
+  .item-summary {
+    padding: 12px;
+  }
+
+  .item-contact {
+    gap: 10px;
+  }
+
+  .anchor-whatsapp-contact,
+  .mark-sold {
+    min-width: 0;
+    height: 48px;
+    font-size: 13px;
+    padding: 8px;
+  }
+
+  .anchor-whatsapp-contact {
+    width: auto;
+  }
+
+  .listings {
+    padding: 0 16px 32px;
+  }
+
+  .listings-head {
+    font-size: 24px;
+    margin-bottom: 12px;
+  }
+
+  .listings-cards {
+    flex-wrap: wrap;
+  }
+
+  .listing-card {
+    flex: 1 1 45%;
+    min-width: 0;
+  }
+
+  .listing-card img {
+    height: 120px;
+  }
+}
+
+/* Small mobile phones */
+@media (max-width: 380px) {
+  .navbar ul {
+    gap: 6px;
+  }
+
+  .left-nav {
+    font-size: 13px;
+  }
+
+  .right-nav {
+    gap: 5px;
+  }
+
+  nav ul li a {
+    font-size: 10px;
+  }
+
+  .orange-background {
+    padding: 8px 6px;
+  }
+
+  .item {
+    font-size: 26px;
+  }
+
+  .item-contact {
+    gap: 6px;
+  }
+
+  .anchor-whatsapp-contact,
+  .mark-sold {
+    font-size: 11px;
+  }
+}

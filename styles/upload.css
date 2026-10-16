@@ -1,0 +1,337 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Bricolage Grotesque", sans-serif;
+  background-color: rgb(246, 245, 241);
+  color: #14213d;
+}
+.navbar {
+  background-color: #14213d;
+  padding: 16px 48px;
+}
+.navbar ul {
+  display: flex;
+  flex-direction: row;
+}
+.left-nav {
+  flex: 2;
+  color: white;
+}
+
+.right-nav {
+  flex: 1;
+  display: flex;
+}
+.right-nav li {
+  flex: 1;
+}
+nav ul li {
+  list-style-type: none;
+  flex: 1;
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-family: "DM-Sans", sans-serif;
+}
+.orange-background {
+  background-color: #f5a524;
+  padding: 12px 22px;
+  border-radius: 10px;
+  color: black;
+}
+.header-text {
+  font-family: "Bricolage Grotesque";
+  font-size: 44px;
+  padding: 20px 48px 0px;
+}
+.main {
+  display: flex;
+  padding: 20px 48px 56px;
+}
+.left-main {
+  flex: 1;
+}
+.right-main {
+  flex: 1;
+}
+
+label {
+  font-size: 16px;
+  font-family: "DM Sans";
+}
+input {
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+
+.wide-input {
+  padding: 0 16px;
+  width: 600px;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.6);
+}
+.input-flex {
+  display: flex;
+}
+.left-input {
+  flex: 1;
+}
+.right-input {
+  flex: 1;
+}
+.price-input {
+  width: 290px;
+  height: 40px;
+}
+.condition-label {
+  margin-bottom: 10px;
+}
+.condition-container {
+  height: 40px;
+  padding: 10px 20px;
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.6);
+}
+.pickup-label {
+  margin-top: 10px;
+}
+.pickup-input {
+  margin-bottom: 5px;
+}
+.small-text {
+  font-size: 11px;
+  margin-bottom: 10px;
+  color: rgba(0, 0, 0, 0.7);
+}
+textarea {
+  width: 600px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+.post-item {
+  background-color: #f5a524;
+  padding: 12px 22px;
+  border-radius: 10px;
+  width: 160px;
+  height: 50px;
+  border-radius: 10px;
+  font-family: "DM Sans";
+  font-size: 18px;
+  border: none;
+}
+.cancel {
+  width: 115px;
+  height: 50px;
+  border-radius: 10px;
+  font-family: "DM Sans";
+  font-size: 17px;
+  border: 1px solid black;
+}
+.photo-text {
+  margin-bottom: 10px;
+}
+.preview-upload {
+  width: 530px;
+  display: flex;
+  flex-direction: column;
+  height: 380px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+  border-style: dotted;
+}
+.choose-photo {
+  background-color: #14213d;
+  padding: 12px 22px;
+  border-radius: 10px;
+  width: 530px;
+  height: 50px;
+  border-radius: 10px;
+  font-family: "DM Sans";
+  font-size: 16px;
+  border: none;
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+}
+/* Tablets */
+@media (max-width: 900px) {
+  .navbar {
+    padding: 16px 24px;
+  }
+
+  .header-text {
+    font-size: 36px;
+    padding: 20px 24px 0;
+  }
+
+  .main {
+    padding: 20px 24px 40px;
+    gap: 24px;
+  }
+
+  .wide-input,
+  textarea {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .price-input {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .preview-upload,
+  .choose-photo {
+    width: 100%;
+  }
+
+  .preview-upload {
+    height: 320px;
+  }
+}
+
+/* Mobile phones */
+@media (max-width: 600px) {
+  .navbar {
+    padding: 16px;
+  }
+
+  .navbar ul {
+    align-items: center;
+    gap: 10px;
+  }
+
+  .left-nav {
+    flex: 1;
+    white-space: nowrap;
+  }
+
+  .right-nav {
+    flex: 2;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 8px;
+  }
+
+  .right-nav li {
+    flex: initial;
+  }
+
+  nav ul li a {
+    font-size: 12px;
+  }
+
+  .orange-background {
+    padding: 9px 10px;
+  }
+
+  .header-text {
+    font-size: 30px;
+    padding: 24px 16px 0;
+  }
+
+  .main {
+    flex-direction: column;
+    padding: 20px 16px 32px;
+    gap: 30px;
+  }
+
+  .left-main,
+  .right-main {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .wide-input,
+  textarea,
+  .price-input {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .input-flex {
+    gap: 12px;
+  }
+
+  .left-input,
+  .right-input {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .condition-container {
+    padding: 10px;
+  }
+
+  .preview-upload,
+  .choose-photo {
+    width: 100%;
+  }
+
+  .preview-upload {
+    height: 260px;
+    padding: 16px;
+  }
+
+  .post-item {
+    width: auto;
+    font-size: 16px;
+  }
+
+  .cancel {
+    width: auto;
+    padding: 0 18px;
+    font-size: 15px;
+  }
+}
+
+/* Small mobile phones */
+@media (max-width: 380px) {
+  .navbar ul {
+    gap: 6px;
+  }
+
+  .left-nav {
+    font-size: 13px;
+  }
+
+  .right-nav {
+    gap: 5px;
+  }
+
+  nav ul li a {
+    font-size: 10px;
+  }
+
+  .orange-background {
+    padding: 8px 6px;
+  }
+
+  .header-text {
+    font-size: 26px;
+  }
+
+  .input-flex {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .preview-upload {
+    height: 220px;
+  }
+
+  .post-item,
+  .cancel {
+    font-size: 14px;
+  }
+}
